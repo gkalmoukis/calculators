@@ -17,12 +17,14 @@
         <div class="row"> <span>fixed</span>  <pre>{{ percentageChange.toFixed(2) }}</pre> </div>
         <div class="row"> <span>percentage raw</span>  <pre>{{ percentageChange }}%</pre> </div>
         <div class="row"> <span>raw</span>  <pre>{{ percentageChange }}</pre></div>
-      </div>
+        <div class="row"> <button @click="resetForm">Reset</button> </div>
+    </div>
     </div>
   </template>
   
   <script>
   export default {
+    layout: "default",
     data() {
       return {
         originalValue: null,
@@ -40,6 +42,12 @@
   
         // Update the component's state with the result
         this.percentageChange = percentageChange;
+      },
+      resetForm() {
+        this.originalValue = null;
+        this.newValue = null;
+        this.percentageChange = null;
+
       }
     }
   };
