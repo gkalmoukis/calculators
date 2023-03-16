@@ -13,6 +13,19 @@
 
 <script>
 export default {
-  layout: "default"
+  layout: "default",
+  head: {
+    title: 'Calculators | gkalmoukis',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'We offer a wide selection of calculators to help you with your everyday tasks.'
+      }
+    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+  }
 };
 </script>

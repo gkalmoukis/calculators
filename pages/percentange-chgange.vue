@@ -1,5 +1,22 @@
 <template>
-    <h3>Percentage Change</h3>
+    <h3>Percentage Change Calculator</h3>
+
+    <p>This page provides a percentage change calculator. To use this calculator, simply follow these steps:</p> 
+    <ol>
+        <li>Enter the original value in the "Original" input field.</li>
+        <li>Enter the new value in the "New" input field.</li>
+        <li>Click the "Calculate" button to see the percentage change.</li>
+        <li>The percentage change will be displayed in the four different formats - percentage fixed, fixed, percentage raw, and raw.</li>
+        <li>Click the "Reset" button to clear the input fields and the percentage change display.</li>
+    </ol>
+    <p>For example, let's say you want to calculate the percentage change of a product's price between its original value of 50 EUR and its new value of 75 EUR. Here's how you can use this form:</p>
+    <ul>
+        <li>Enter 50 in the "Original" input field.</li>
+        <li>Enter 75 in the "New" input field.</li>
+        <li>Click the "Calculate" button.</li>
+        <li>The percentage change will be displayed in the four different formats.</li>
+    </ul>
+
     <div>
       <form @submit.prevent="calculatePercentageChange">
         <div>
@@ -25,6 +42,17 @@
   <script>
   export default {
     layout: "default",
+    head: {
+    title: 'Percentage Change | gkalmoukis',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'This page provides a percentage change calculator.'
+      }
+    ],
     data() {
       return {
         originalValue: null,
