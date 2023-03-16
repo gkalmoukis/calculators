@@ -25,7 +25,6 @@ export default {
         content: 'We offer a wide selection of calculators to help you with your everyday tasks.'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   }
 };
 </script>

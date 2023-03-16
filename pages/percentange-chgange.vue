@@ -41,19 +41,20 @@
   
   <script>
   export default {
-    layout: "default",
     head: {
-    title: 'Percentage Change | gkalmoukis',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'This page provides a percentage change calculator.'
-      }
-    ],
-    data() {
+        title: 'Percentage Change | gkalmoukis',
+        meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+            hid: 'description',
+            name: 'description',
+            content: 'This page provides a percentage change calculator.'
+        }
+    ]},
+    
+    layout: "default",
+        data() {
       return {
         originalValue: null,
         newValue: null,
