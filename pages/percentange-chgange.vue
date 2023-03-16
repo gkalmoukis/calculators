@@ -27,7 +27,7 @@
           <label for="new">New:</label>
           <input type="number" step="any" id="new" v-model="newValue">
         </div>
-        <button type="submit">Calculate</button>
+        <button type="submit">Calculate Change</button>
       </form>
       <div v-if="percentageChange !== null">
         <div class="row"> <span>percentage fixed</span>  <pre>{{ percentageChange.toFixed(2) }}%</pre></div>
@@ -52,7 +52,7 @@
             content: 'This page provides a percentage change calculator.'
         }
     ]},
-    
+
     layout: "default",
         data() {
       return {
